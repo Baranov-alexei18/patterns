@@ -17,3 +17,7 @@
   background-color: #ffffff;
   overflow-y: auto;
 }
+
+.linkButton {
+  border-radius: 12px;
+}

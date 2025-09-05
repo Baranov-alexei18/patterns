@@ -1,0 +1,46 @@
+.container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notification {
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  min-width: 220px;
+  font-size: 14px;
+  animation: fadeIn 0.3s ease;
+  color: #222;
+}
+
+.success {
+  background-color: #c6f6d5;
+}
+
+.error {
+  background-color: #feb2b2;
+}
+
+.info {
+  background-color: #bee3f8;
+}
+
+.warning {
+  background-color: #faf089;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

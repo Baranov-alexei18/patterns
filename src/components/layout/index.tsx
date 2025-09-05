@@ -2,7 +2,7 @@
 
 import { Box, Flex, Button, Stack, Span, Accordion } from '@chakra-ui/react';
 import { type ReactNode } from 'react';
-import { Link } from 'react-router';
+import { Link, useLocation } from 'react-router';
 
 import styles from './styles.module.css';
 import { PATTERN_GROUPS } from '../../routes/constants';
@@ -12,6 +12,8 @@ type LayoutProps = {
 };
 
 export const Layout = ({ children }: LayoutProps) => {
+  const location = useLocation();
+
   return (
     <Flex className={styles.container}>
       <Box className={styles.sidebar}>
@@ -35,8 +37,11 @@ export const Layout = ({ children }: LayoutProps) => {
                         variant="ghost"
                         as={Link}
                         width="100%"
+                        color={location.pathname === pattern.path ? '#747bff' : 'black'}
+                        colorScheme={location.pathname === pattern.path ? 'teal' : 'gray'}
                         justifyContent="flex-start"
                         asChild={true}
+                        className={styles.linkButton}
                       >
                         <Link to={pattern.path}>{pattern.name}</Link>
                       </Button>
