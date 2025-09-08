@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-import { notificationService, type Notification } from './notificationServices';
+import { notificationService, type Notification } from './notification-services';
 import styles from './styles.module.css';
 
 export const NotificationContainer = () => {

@@ -1,0 +1,14 @@
+.button {
+  background-color: white;
+  color: black;
+  border: 1px solid gray;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.input {
+  border: 1px solid gray;
+  padding: 6px;
+  color: black;
+  background-color: white;
+}

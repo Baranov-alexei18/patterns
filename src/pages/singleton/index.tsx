@@ -2,8 +2,8 @@
 
 import { Button, Heading, Stack } from '@chakra-ui/react';
 
-import { NotificationContainer } from './NotificationContainer';
-import { notificationService } from './notificationServices';
+import { NotificationContainer } from './notification-container';
+import { notificationService } from './notification-services';
 import { PatternInfo } from '../../components/pattern-info';
 
 const SingletonPage = () => {
