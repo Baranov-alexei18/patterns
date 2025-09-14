@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { createButtonBuilder } from './button-config';
-
 type ButtonProps = {
   label: string;
   color: string;

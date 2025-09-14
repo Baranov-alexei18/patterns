@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Code, Flex, Heading, List, ListItem, Stack, Text } from '@chakra-ui/react';
+import { Box, Code, Flex, Heading, List, ListItem, Text } from '@chakra-ui/react';
 import { useState } from 'react';
 import { Fragment } from 'react/jsx-runtime';
 

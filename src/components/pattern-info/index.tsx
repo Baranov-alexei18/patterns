@@ -1,7 +1,6 @@
 'use client';
 
 import { Box, Heading, Text, List } from '@chakra-ui/react';
-import { type ReactNode } from 'react';
 
 export type PatternInfoProps = {
   title: string;
