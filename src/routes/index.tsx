@@ -1,14 +1,17 @@
+import { lazy } from 'react';
 import { Routes, Route } from 'react-router';
 
-import About from '../pages/about';
-import AbstractFactoryPage from '../pages/abstract-factory';
-import AdapterPage from '../pages/adapter';
-import BridgePage from '../pages/bridge';
-import BuilderPage from '../pages/builder';
-import FactoryPage from '../pages/factory';
-import Home from '../pages/home';
-import PrototypePage from '../pages/prototype';
-import SingletonPage from '../pages/singleton';
+const Home = lazy(() => import('../pages/home'));
+const About = lazy(() => import('../pages/about'));
+
+const SingletonPage = lazy(() => import('../pages/singleton'));
+const AbstractFactoryPage = lazy(() => import('../pages/abstract-factory'));
+const AdapterPage = lazy(() => import('../pages/adapter'));
+const BridgePage = lazy(() => import('../pages/bridge'));
+const BuilderPage = lazy(() => import('../pages/builder'));
+const CompositePage = lazy(() => import('../pages/composite'));
+const PrototypePage = lazy(() => import('../pages/prototype'));
+const FactoryPage = lazy(() => import('../pages/factory'));
 
 const RoutesList = () => {
   return (
@@ -24,6 +27,7 @@ const RoutesList = () => {
 
       <Route path="/patterns/adapter" element={<AdapterPage />} />
       <Route path="/patterns/bridge" element={<BridgePage />} />
+      <Route path="/patterns/composite" element={<CompositePage />} />
     </Routes>
   );
 };
