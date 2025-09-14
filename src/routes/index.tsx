@@ -12,6 +12,7 @@ const BuilderPage = lazy(() => import('../pages/builder'));
 const CompositePage = lazy(() => import('../pages/composite'));
 const PrototypePage = lazy(() => import('../pages/prototype'));
 const FactoryPage = lazy(() => import('../pages/factory'));
+const DecoratorPage = lazy(() => import('../pages/decorator'));
 
 const RoutesList = () => {
   return (
@@ -28,6 +29,7 @@ const RoutesList = () => {
       <Route path="/patterns/adapter" element={<AdapterPage />} />
       <Route path="/patterns/bridge" element={<BridgePage />} />
       <Route path="/patterns/composite" element={<CompositePage />} />
+      <Route path="/patterns/decorator" element={<DecoratorPage />} />
     </Routes>
   );
 };
