@@ -13,6 +13,7 @@ const CompositePage = lazy(() => import('../pages/composite'));
 const PrototypePage = lazy(() => import('../pages/prototype'));
 const FactoryPage = lazy(() => import('../pages/factory'));
 const DecoratorPage = lazy(() => import('../pages/decorator'));
+const FacadePage = lazy(() => import('../pages/facade'));
 
 const RoutesList = () => {
   return (
@@ -30,6 +31,7 @@ const RoutesList = () => {
       <Route path="/patterns/bridge" element={<BridgePage />} />
       <Route path="/patterns/composite" element={<CompositePage />} />
       <Route path="/patterns/decorator" element={<DecoratorPage />} />
+      <Route path="/patterns/facade" element={<FacadePage />} />
     </Routes>
   );
 };
