@@ -15,6 +15,7 @@ const FactoryPage = lazy(() => import('../pages/factory'));
 const DecoratorPage = lazy(() => import('../pages/decorator'));
 const FacadePage = lazy(() => import('../pages/facade'));
 const FlyweightPage = lazy(() => import('../pages/flyweight'));
+const ProxyPage = lazy(() => import('../pages/proxy'));
 
 const RoutesList = () => {
   return (
@@ -34,6 +35,7 @@ const RoutesList = () => {
       <Route path="/patterns/decorator" element={<DecoratorPage />} />
       <Route path="/patterns/facade" element={<FacadePage />} />
       <Route path="/patterns/flyweight" element={<FlyweightPage />} />
+      <Route path="/patterns/proxy" element={<ProxyPage />} />
     </Routes>
   );
 };
