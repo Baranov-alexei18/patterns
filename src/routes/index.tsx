@@ -17,6 +17,7 @@ const FacadePage = lazy(() => import('../pages/facade'));
 const FlyweightPage = lazy(() => import('../pages/flyweight'));
 const ProxyPage = lazy(() => import('../pages/proxy'));
 const ObserverPage = lazy(() => import('../pages/observer'));
+const StrategyPage = lazy(() => import('../pages/strategy'));
 
 const RoutesList = () => {
   return (
@@ -39,6 +40,7 @@ const RoutesList = () => {
       <Route path="/patterns/proxy" element={<ProxyPage />} />
 
       <Route path="/patterns/observer" element={<ObserverPage />} />
+      <Route path="/patterns/strategy" element={<StrategyPage />} />
     </Routes>
   );
 };
