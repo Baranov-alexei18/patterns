@@ -18,7 +18,7 @@ const createWriteCommand = (char: string): Command<EditorState> => ({
 
 function useCommandManager<T>(initialState: T) {
   const [state, setState] = useState(initialState);
-  const [history, setHistory] = useState<Command<T>[]>([]);
+  const [, setHistory] = useState<Command<T>[]>([]);
 
   const executeCommand = (command: Command<T>) => {
     setState((prev) => {

@@ -22,6 +22,7 @@ const StatePage = lazy(() => import('../pages/state'));
 const CommandPage = lazy(() => import('../pages/command'));
 const IteratorPage = lazy(() => import('../pages/iterator'));
 const MediatorPage = lazy(() => import('../pages/mediator'));
+const MementoPage = lazy(() => import('../pages/memento'));
 
 const RoutesList = () => {
   return (
@@ -49,6 +50,7 @@ const RoutesList = () => {
       <Route path="/patterns/command" element={<CommandPage />} />
       <Route path="/patterns/iterator" element={<IteratorPage />} />
       <Route path="/patterns/mediator" element={<MediatorPage />} />
+      <Route path="/patterns/memento" element={<MementoPage />} />
     </Routes>
   );
 };
