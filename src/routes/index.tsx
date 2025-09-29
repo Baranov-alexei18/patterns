@@ -24,6 +24,7 @@ const IteratorPage = lazy(() => import('../pages/iterator'));
 const MediatorPage = lazy(() => import('../pages/mediator'));
 const MementoPage = lazy(() => import('../pages/memento'));
 const TemplateMethodPage = lazy(() => import('../pages/template-method'));
+const VisitorPage = lazy(() => import('../pages/visitor'));
 
 const RoutesList = () => {
   return (
@@ -53,6 +54,7 @@ const RoutesList = () => {
       <Route path="/patterns/mediator" element={<MediatorPage />} />
       <Route path="/patterns/memento" element={<MementoPage />} />
       <Route path="/patterns/template-method" element={<TemplateMethodPage />} />
+      <Route path="/patterns/visitor" element={<VisitorPage />} />
     </Routes>
   );
 };
