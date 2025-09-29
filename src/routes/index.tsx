@@ -25,6 +25,7 @@ const MediatorPage = lazy(() => import('../pages/mediator'));
 const MementoPage = lazy(() => import('../pages/memento'));
 const TemplateMethodPage = lazy(() => import('../pages/template-method'));
 const VisitorPage = lazy(() => import('../pages/visitor'));
+const ChainResponsibilityPage = lazy(() => import('../pages/chain-of-responsibility'));
 
 const RoutesList = () => {
   return (
@@ -55,6 +56,7 @@ const RoutesList = () => {
       <Route path="/patterns/memento" element={<MementoPage />} />
       <Route path="/patterns/template-method" element={<TemplateMethodPage />} />
       <Route path="/patterns/visitor" element={<VisitorPage />} />
+      <Route path="/patterns/chain-of-responsibility" element={<ChainResponsibilityPage />} />
     </Routes>
   );
 };
